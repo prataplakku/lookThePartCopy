@@ -1,0 +1,1140 @@
+{
+	"info": {
+		"_postman_id": "9e167c27-5258-4fce-af6a-184bbd647c1e",
+		"name": "LookThePart",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30478626"
+	},
+	"item": [
+		{
+			"name": "forgot Password",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/passwordReset?id=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"passwordReset"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "active user",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/activeUser?id=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"activeUser"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteSavedProduct",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/deleteSavedProduct?id=4414&user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"deleteSavedProduct"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4414"
+						},
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userFollowEntertainment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/userFollowEntertainment?id=23&user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"userFollowEntertainment"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "23"
+						},
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCharacters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/getCharacters?id=23&user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"getCharacters"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "23"
+						},
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSavedProduct",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/getSavedProduct?id=user@email.com&allowEmptyCollection=true",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"getSavedProduct"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "user@email.com"
+						},
+						{
+							"key": "allowEmptyCollection",
+							"value": "true"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getEntertainment",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/getEntertainment?id=Music",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"getEntertainment"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "Music"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "autoComplete (Search)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/autoComplete?id=Dress",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"autoComplete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "Dress"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "appSearch",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/appSearch?id=daytime&user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"appSearch"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "daytime"
+						},
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "userFollowCharacter",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/userFollowCharacter?id=78&user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"userFollowCharacter"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "78"
+						},
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProfile",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/getProfile?id=78&user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"getProfile"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "78"
+						},
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllCharacters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/getAllCharacters",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"getAllCharacters"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getFeaturedProducts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/getFeaturedProducts?user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"getFeaturedProducts"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "editCollection",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/editCollection?user=user@email.com&new_name=New Collection&name=Old Collection",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"editCollection"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "user@email.com"
+						},
+						{
+							"key": "new_name",
+							"value": "New Collection"
+						},
+						{
+							"key": "name",
+							"value": "Old Collection"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteCollection",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/deleteCollection?user=user@email.com&name=New Collection",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"deleteCollection"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "user@email.com"
+						},
+						{
+							"key": "name",
+							"value": "New Collection"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getProduct",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/getProduct?id=4415&user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"getProduct"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4415"
+						},
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "retailerClicked",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/retailerClicked?id=4416&user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"retailerClicked"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "4416"
+						},
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addCollection",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/addCollection?user=user@email.com&name=Collection 1",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"addCollection"
+					],
+					"query": [
+						{
+							"key": "user",
+							"value": "user@email.com"
+						},
+						{
+							"key": "name",
+							"value": "Collection 1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "passwordChange",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.0) Alamofire/5.8.0"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=utf-8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "id=user%40email.com&password=112233",
+					"options": {
+						"raw": {
+							"language": "text"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/passwordChange",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"passwordChange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=utf-8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "lookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.1) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "password=112233&username=user%40email.com"
+				},
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/login",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "signup",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "User-Agent",
+						"value": "lookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.1) Alamofire/5.8.0"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded; charset=utf-8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "password=112233&username=user%40email.com"
+				},
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/signup",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getCustomPosts",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "User-Agent",
+						"value": "lookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.1) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/getCustomPosts",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"getCustomPosts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "updateDeviceToken",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "User-Agent",
+						"value": "lookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.1) Alamofire/5.8.0"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"deviceToken\" : \"80bee983e4066704e8e6fd42ad1984d076da8332f3d23ae456b3eea2007d7166e3278636c8758c8db2a271dba75349be37ee2d319ecca1b242fdf7d05576db21b8406c79df70ef8982461be4c2ca7351\"\n}"
+				},
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/updateDeviceToken",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"updateDeviceToken"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getPost",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "User-Agent",
+						"value": "lookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.1) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/getPost?id=2786&user=user@email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"getPost"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "2786"
+						},
+						{
+							"key": "user",
+							"value": "user@email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "addSavedProduct",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "lookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.1) Alamofire/5.8.0"
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/addSavedProduct?collection=Collection 1&id=4422&user=user%40email.com",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"addSavedProduct"
+					],
+					"query": [
+						{
+							"key": "collection",
+							"value": "Collection 1"
+						},
+						{
+							"key": "id",
+							"value": "4422"
+						},
+						{
+							"key": "user",
+							"value": "user%40email.com"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "tokenVerify",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Encoding",
+						"value": "br;q=1.0, gzip;q=0.9, deflate;q=0.8"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US;q=1.0"
+					},
+					{
+						"key": "User-Agent",
+						"value": "LookThePart/1.7 (com.lookthepart.ltp; build:2; iOS 17.0.1) Alamofire/5.8.0"
+					}
+				],
+				"url": {
+					"raw": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com/tokenVerify?id=user%40email.com&token=3V5SYVG5C8",
+					"protocol": "http",
+					"host": [
+						"lookthepart-dev",
+						"us-east-2",
+						"elasticbeanstalk",
+						"com"
+					],
+					"path": [
+						"tokenVerify"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "user%40email.com"
+						},
+						{
+							"key": "token",
+							"value": "3V5SYVG5C8"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "http://lookthepart-dev.us-east-2.elasticbeanstalk.com",
+			"type": "string"
+		}
+	]
+}
